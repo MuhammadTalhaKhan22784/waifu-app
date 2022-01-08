@@ -1,0 +1,255 @@
+.roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  height: auto;
+  min-height: 70vh;
+  flex-direction: column;
+  padding: 4rem 0rem;
+}
+.roadmap h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  overflow: visible;
+}
+.roadmap-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+  overflow: visible;
+}
+.roadmap-bg {
+  border-radius: 65px;
+  width: 100%;
+  object-fit: contain;
+}
+.pointer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  position: absolute;
+}
+.left-pointer {
+  width: 100%;
+}
+.pointer-img {
+  width: 100%;
+  object-fit: contain;
+}
+.right-pointer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+.right-pointer h4 {
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+}
+.right-pointer p {
+  font-size: 1.1rem;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+}
+.pointer-div1 {
+  top: 3.5%;
+  left: 57%;
+}
+.pointer-div2 {
+  top: 22%;
+  left: 18%;
+}
+.pointer-div2 .left-pointer {
+  order: 2;
+}
+.pointer-div3 {
+  left: 58%;
+  top: 41%;
+}
+.pointer-div4 {
+  top: 62%;
+  left: 18%;
+}
+.pointer-div4 .left-pointer {
+  order: 2;
+}
+.pointer-div5 {
+  top: 81%;
+  left: 57%;
+}
+@media screen and (max-width: 812px) {
+  .right-pointer h4 {
+    font-size: 1.2rem;
+  }
+  .right-pointer p {
+    font-size: 0.9rem;
+  }
+  .pointer-div1 {
+    top: 2.5%;
+  }
+  .pointer-div5 {
+    top: 79%;
+  }
+}
+@media screen and (max-width: 632px) {
+  .right-pointer h4 {
+    font-size: 1.2rem;
+  }
+  .right-pointer p {
+    font-size: 0.9rem;
+  }
+  .pointer-div {
+    width: 65%;
+  }
+  .left-pointer {
+    width: 30%;
+  }
+  .pointer-div1 {
+    top: 2%;
+    left: 4%;
+  }
+  .pointer-div2 {
+    top: 20%;
+    left: 34%;
+  }
+  .pointer-div2 .right-pointer {
+    order: 2;
+  }
+  .pointer-div3 {
+    left: 4.5%;
+    top: 41%;
+  }
+  .pointer-div4 {
+    top: 59%;
+    left: 34%;
+  }
+  .pointer-div4 .right-pointer {
+    order: 2;
+  }
+  .pointer-div5 {
+    top: 79%;
+    left: 3%;
+  }
+  .pointer-div1 .left-pointer {
+    order: 2;
+  }
+  .pointer-div2 .left-pointer {
+    order: 1;
+  }
+  .pointer-div3 .left-pointer {
+    order: 2;
+  }
+  .pointer-div4 .left-pointer {
+    order: 1;
+  }
+  .pointer-div5 .left-pointer {
+    order: 2;
+  }
+}
+@media screen and (max-width: 478px) {
+  .roadmap {
+    padding: 0rem;
+  }
+  .roadmap h1 {
+    font-size: 2.5rem;
+  }
+  .right-pointer h4 {
+    font-size: 1.2rem;
+  }
+  .right-pointer p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .pointer-div {
+    width: 70%;
+  }
+  .left-pointer {
+    width: 65%;
+  }
+  .left-pointer img {
+    width: 50%;
+  }
+  .right-pointer {
+    width: 85%;
+  }
+  .pointer-div1 {
+    top: -1%;
+    left: 13%;
+  }
+  .pointer-div2 {
+    top: 20%;
+    left: 26%;
+  }
+  .pointer-div2 .left-pointer {
+    text-align: center;
+  }
+  .pointer-div3 {
+    left: 14.5%;
+    top: 39%;
+  }
+  .pointer-div4 {
+    top: 59%;
+    left: 26%;
+  }
+  .pointer-div4 .left-pointer {
+    text-align: center;
+  }
+  .pointer-div5 {
+    top: 77%;
+    left: 15%;
+  }
+  .pointer-div1 .left-pointer {
+    order: 2;
+  }
+  .pointer-div2 .left-pointer {
+    order: 1;
+  }
+  .pointer-div3 .left-pointer {
+    order: 2;
+  }
+  .pointer-div4 .left-pointer {
+    order: 1;
+  }
+  .pointer-div5 .left-pointer {
+    order: 2;
+  }
+  .pointer-div1 .right-pointer,
+  .pointer-div3 .right-pointer,
+  .pointer-div5 .right-pointer {
+    padding-left: 20px;
+  }
+  .pointer-div1 .right-pointer {
+    padding-top: 20px;
+  }
+  .pointer-div2 .right-pointer,
+  .pointer-div4 .right-pointer {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .roadmap {
+    padding: 2rem 0rem;
+  }
+
+  .right-pointer h4 {
+    font-size: 1.1rem;
+  }
+  .pointer-div1 {
+    top: -2%;
+    left: 11%;
+  }
+  .pointer-div2 {
+    top: 20%;
+    left: 27%;
+  }
+}

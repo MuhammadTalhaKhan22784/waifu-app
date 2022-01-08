@@ -1,0 +1,136 @@
+.about * {
+  overflow: visible;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  height: auto;
+  padding: 7rem 0rem;
+  overflow: visible;
+}
+.about_left,
+.about_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+}
+.about_left {
+  overflow: visible;
+}
+
+.absolute-image {
+  position: absolute;
+  right: -32%;
+  top: 13%;
+}
+.big_img {
+  width: 88%;
+}
+.about_right {
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+}
+.about_title {
+  color: #ffc683;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about_title2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.about_desc {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  width: 70%;
+  margin-top: 2rem;
+}
+.about_right button {
+  margin-top: 1.5rem;
+}
+.hero_buy {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  width: 190px;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #fa3f62;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+.hero_buy:hover,
+.hero_create:hover {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+.card-mine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 220px;
+  height: 280px;
+  text-align: left;
+  gap: 10px;
+  padding: 10px 0px;
+  border-radius: 25px;
+  /* transform: translateY(50px); */
+  /* opacity: 0; */
+  padding-top: 30px;
+  overflow: visible;
+  transition: all 0.25s ease-in-out;
+  margin-right: 2rem;
+}
+.big_card-mine {
+  width: 320px;
+  height: 385px;
+  animation: none;
+  position: relative;
+  overflow: visible;
+  margin-right: 0px;
+
+  pointer-events: none;
+}
+@media screen and (max-width: 1036px) {
+  .about {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .about_right {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 502px) {
+  .absolute-image {
+    right: 23%;
+    top: -23%;
+  }
+  .about {
+    padding-bottom: 3rem;
+  }
+  .about_title2 {
+    font-size: 2.5rem;
+  }
+  .about_desc {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about_right button {
+    font-size: 1rem;
+    width: 145px;
+  }
+}

@@ -1,0 +1,152 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  border-bottom: 3px solid #525252;
+  overflow: hidden;
+}
+.header .desktop {
+  display: flex;
+}
+.header .mobile {
+  display: none;
+}
+.logo {
+  width: 4%;
+  object-fit: contain;
+}
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible;
+}
+.navbar2 li {
+  overflow: visible;
+}
+.nav-items {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+}
+.nav-items::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  top: 100%;
+  transition: all 0.25s ease-in-out;
+}
+.nav-items:hover::before {
+  width: 100%;
+}
+.nav-items:hover {
+  color: white;
+}
+.header_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 2rem;
+}
+.header_icon {
+  font-size: 30px;
+  border-radius: 50%;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-li {
+  width: 10%;
+}
+.logo-nav {
+  object-fit: contain;
+  width: 100%;
+  max-width: 87%;
+}
+.fa-discord {
+  background-color: #5865f2;
+}
+.fa-twitter {
+  background-color: #1d9bef;
+}
+@media screen and (max-width: 992px) {
+  .header {
+    justify-content: space-between;
+    padding-inline: 35px;
+  }
+  .header .desktop {
+    display: none;
+  }
+  .header .mobile {
+    display: block;
+  }
+  .logo {
+    width: 7%;
+  }
+  .fa-times,
+  .fa-bars {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .navbar2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+    justify-content: flex-start;
+    width: 40vw;
+    align-items: flex-start;
+    padding: 50px 20px !important;
+    transition: all 0.35s ease-in-out;
+    right: -100vw;
+    opacity: 0;
+    z-index: 2;
+    display: none;
+  }
+  .nav-items {
+    font-size: 1.4rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    width: 100%;
+    overflow: visible;
+  }
+  .nav-items::before {
+    content: "";
+    height: 0%;
+  }
+  .open {
+    right: 0;
+    opacity: 1;
+  }
+  .block {
+    display: flex;
+  }
+}
+@media screen and (max-width: 478px) {
+  .logo {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar2 {
+    width: 60vw;
+  }
+}
